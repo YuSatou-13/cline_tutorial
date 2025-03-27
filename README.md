@@ -1,24 +1,47 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+あなたは、Ruby on Railsを使用して、シンプルで機能的なメモ帳WEBアプリケーションを作成する経験豊富な開発者です。以下の要件を満たすアプリケーションを段階的に開発してください：
 
-Things you may want to cover:
+要件:
+1. メモの基本的な機能
+- メモの新規作成
+- メモの一覧表示
+- メモの詳細表示
+- メモの編集
+- メモの削除
 
-* Ruby version
+実装手順:
+1. 新規Railsプロジェクトの作成
+- プロジェクト名: memo_app
+- データベース: SQLite（デフォルト）
 
-* System dependencies
+2. モデル作成
+- モデル名: Note
+- カラム:
+  * title (string): メモのタイトル
+  * content (text): メモの本文
 
-* Configuration
+3. コントローラーとビューの実装
+- NotesコントローラーにCRUD処理を実装
+- 必要なビューテンプレートを作成
+  * index: メモ一覧
+  * show: メモ詳細
+  * new: 新規メモ作成
+  * edit: メモ編集
 
-* Database creation
+4. ルーティングの設定
+- resourcesを使用してNotesのREST APIルートを定義
+- ルートパスをメモ一覧に設定
 
-* Database initialization
+5. バリデーション追加
+- タイトルは必須
+- タイトルの長さを制限（例：1〜100文字）
 
-* How to run the test suite
+追加要望があれば、柔軟に対応してください。
 
-* Services (job queues, cache servers, search engines, etc.)
+最終目標:
+- シンプルで使いやすいメモ帳アプリケーション
+- すべての基本的なCRUD操作が可能
+- ユーザーフレンドリーなインターフェース
 
-* Deployment instructions
-
-* ...
+コードの可読性と Rails のベストプラクティスに従って実装してください。
